@@ -25,19 +25,15 @@ Bu proje, balık işleme tesislerinde strafor kutulara yapıştırılan barkodlu
 
 gmsDgApp/ ├── controllers/ # API mantıksal kontrolcüleri ├── env/ # Ortam değişkenleri ├── middleware/ # Özel middleware fonksiyonları ├── models/ # Mongoose şema tanımları ├── routes/ # Express router dosyaları ├── pubnubConfig.js # PubNub yapılandırması ├── server.js # Uygulamanın başlangıç noktası ├── package.json # Proje bağımlılıkları ve scriptler
 
-bash
-Kopyala
-Düzenle
 
 ## ⚙️ Kurulum Talimatları
 
 ### 1. Depoyu Klonlayın
 
-```bash
 git clone https://github.com/altnskmuhammed/gmsDgApp.git
 cd gmsDgApp
 ###  2. Bağımlılıkları Yükleyin
-```bash
+
 npm install
 3. Ortam Değişkenlerini Ayarlayın
 Ana dizine .env dosyası oluşturun ve aşağıdaki değişkenleri tanımlayın:
