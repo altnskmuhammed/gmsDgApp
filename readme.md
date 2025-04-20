@@ -36,7 +36,7 @@ Düzenle
 ```bash
 git clone https://github.com/altnskmuhammed/gmsDgApp.git
 cd gmsDgApp
-2. Bağımlılıkları Yükleyin
+###  2. Bağımlılıkları Yükleyin
 bash
 Kopyala
 Düzenle
@@ -51,7 +51,7 @@ PORT=5000
 MONGO_URI=mongodb://localhost:27017/gmsDgApp
 PUBNUB_PUBLISH_KEY=your_pubnub_publish_key
 PUBNUB_SUBSCRIBE_KEY=your_pubnub_subscribe_key
-4. Sunucuyu Başlatın
+###  4. Sunucuyu Başlatın
 bash
 Kopyala
 Düzenle
@@ -110,6 +110,10 @@ Pull request gönderin.
 📝 Lisans
 Bu proje MIT Lisansı ile lisanslanmıştır. Detaylar için LICENSE dosyasını inceleyebilirsiniz.
 
+📫 İletişim
+Her türlü görüş, öneri veya işbirliği için:
+
+GitHub: altnskmuhammed
 📫 İletişim
 Her türlü görüş, öneri veya işbirliği için:
 
