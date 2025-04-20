@@ -37,9 +37,7 @@ Düzenle
 git clone https://github.com/altnskmuhammed/gmsDgApp.git
 cd gmsDgApp
 ###  2. Bağımlılıkları Yükleyin
-bash
-Kopyala
-Düzenle
+```bash
 npm install
 3. Ortam Değişkenlerini Ayarlayın
 Ana dizine .env dosyası oluşturun ve aşağıdaki değişkenleri tanımlayın:
