@@ -40,10 +40,8 @@ npm install
 Ana dizine .env dosyası oluşturun ve aşağıdaki değişkenleri tanımlayın:
 
 ```env
-PORT=5000
+PORT=8080
 MONGO_URI=mongodb://localhost:27017/gmsDgApp
-PUBNUB_PUBLISH_KEY=your_pubnub_publish_key
-PUBNUB_SUBSCRIBE_KEY=your_pubnub_subscribe_key
 ```
 ###  4. Sunucuyu Başlatın
 ```bash
