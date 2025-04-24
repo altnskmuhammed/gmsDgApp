@@ -47,27 +47,29 @@ MONGO_URI=mongodb://localhost:27017/gmsDgApp
 ```bash
 npm start
 ```
-🔌 API Uç Noktaları
+## 🔌 API Uç Noktaları
 
-Yöntem	Uç Nokta	Açıklama
-POST	/register	Kullanıcı Oluşturma
-GET	/api/login	Kullanıcı Giriş Yapma
-PUT	/api/users/:id/role	Kullanıcı Rol Güncelleme
-GET	/api/orders	Tüm siparişleri getirir
-GET	/api/orders/:id	Belirli bir id'ye göre siparişi getirir
-DELETE	/api/orders/:orderId/pallets/:palletId	Palet Silme
-POST	/api/orders/:orderId/pallets	Palet Ekleme
-POST	/api/orders	Sipariş Oluşturma
-DELETE	/api/orders/:orderId/pallets/:palletNumber/weights	Kilo Silme
-PUT	/api/orders/:orderId/pallets/:palletId	Palet Düzenleme
-GET	/api/orders/:orderId/pallets/:palletId	Palet Getirme
-PUT	/api/orders/:orderId	Sipariş Status Güncelleme
-POST	/api/export/export-to-excel	Paleti Excel'e Aktarma
-POST	/api/export-to-excel-summary	Tüm Paletlerin Özetini Excel'e Aktarma
-POST	/api/roles	Rol Ekleme
-GET	/api/roles	Rolleri Getirme
-PUT	/api/roles/:id	Rol Güncelleme
-DELETE	/api/roles/:id	Rol Silme
+| Yöntem | Uç Nokta                                           | Açıklama                        |
+|--------|----------------------------------------------------|---------------------------------|
+| POST   | /register                                          | Kullanıcı Oluşturma             |
+| GET    | /api/login                                         | Kullanıcı Giriş Yapma           |
+| PUT    | /api/users/:id/role                                | Kullanıcı Rol Güncelleme        |
+| GET    | /api/orders                                        | Tüm siparişleri getirir         |
+| GET    | /api/orders/:id                                    | Belirli bir id'ye göre sipariş  |
+| DELETE | /api/orders/:orderId/pallets/:palletId             | Palet Silme                     |
+| POST   | /api/orders/:orderId/pallets                       | Palet Ekleme                    |
+| POST   | /api/orders                                        | Sipariş Oluşturma               |
+| DELETE | /api/orders/:orderId/pallets/:palletNumber/weights | Kilo Silme                      |
+| PUT    | /api/orders/:orderId/pallets/:palletId             | Palet Düzenleme                 |
+| GET    | /api/orders/:orderId/pallets/:palletId             | Palet Getirme                   |
+| PUT    | /api/orders/:orderId                               | Sipariş Status Güncelleme       |
+| POST   | /api/export/export-to-excel                        | Paleti Excel'e Aktarma          |
+| POST   | /api/export-to-excel-summary                       | Tüm Paletlerin Özetini Aktarma  |
+| POST   | /api/roles                                         | Rol Ekleme                      |
+| GET    | /api/roles                                         | Rolleri Getirme                 |
+| PUT    | /api/roles/:id                                     | Rol Güncelleme                  |
+| DELETE | /api/roles/:id                                     | Rol Silme                       |
+
 Not: Tüm endpoint’ler ilgili controllers/ ve routes/ klasörlerinde detaylandırılmıştır.
 
 📈 Fonksiyonel Özellikler
