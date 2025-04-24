@@ -28,36 +28,52 @@ gmsDgApp/ ├── controllers/ # API mantıksal kontrolcüleri ├── env/ 
 ## ⚙️ Kurulum Talimatları
 
 ### 1. Depoyu Klonlayın
-
+```bash
 git clone https://github.com/altnskmuhammed/gmsDgApp.git
 cd gmsDgApp
+```
 ###  2. Bağımlılıkları Yükleyin
-
+```bash
 npm install
-3. Ortam Değişkenlerini Ayarlayın
+```
+ ###  3. Ortam Değişkenlerini Ayarlayın
 Ana dizine .env dosyası oluşturun ve aşağıdaki değişkenleri tanımlayın:
 
-env
-Kopyala
-Düzenle
+```env
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/gmsDgApp
 PUBNUB_PUBLISH_KEY=your_pubnub_publish_key
 PUBNUB_SUBSCRIBE_KEY=your_pubnub_subscribe_key
+```
 ###  4. Sunucuyu Başlatın
-bash
-Kopyala
-Düzenle
+```bash
 npm start
+```
 🔌 API Uç Noktaları
 
-Yöntem	Uç Nokta	Açıklama
-GET	/api/palets	Tüm paletleri getirir
-POST	/api/palets	Yeni palet oluşturur
-GET	/api/styrofoams	Tüm straforları getirir
-POST	/api/styrofoams	Yeni strafor kaydeder
-GET	/api/orders	Tüm siparişleri getirir
-POST	/api/orders	Yeni sipariş oluşturur
+Yöntem	Uç Nokta	                                             Açıklama
+POST    /register                                                    Kullanıcı Oluşturma
+GET     /api/login                                                   Kullanıcı Giriş Yapma
+PUT     /api/users/:id/role                                          Kullanıcı Rol Güncelleme
+
+GET	/api/orders	                                             Tüm siparişleri getirir
+GET	/api/orders/:id	                                             Belirli bir id ye göre siparişi getirir
+DELETE	/api/orders/:orderId/pallets/:palletId	                     Palet Silme
+POST	/api/orders/:orderId/pallets	                             Palet Ekleme
+POST	/api/orders	                                             Sipariş Oluşturma
+DELETE	/api/orders/:orderId/pallets/:palletNumber/weights	     Kilo silme
+PUT	/api/orders/:orderId/pallets/:palletId	                     Palet Düzenleme
+GET	/api/orders/:orderId/pallets/:palletId	                     Palet Getirme
+PUT	/api/orders/:orderId	                                     Sipariş Status güncelleme
+
+POST	/api/export/export-to-excel	                             Paleti Excel'e Aktarma
+POST	/api/export-to-excel-summary	                             Tüm Paletlerin Özetini Excel'e Aktarma
+
+POST	/api/roles	                                             Rol Ekleme
+GET	/api/roles	                                             Rolleri Getirme
+PUT	/api/roles/:id	                                             Rol Güncelleme
+DELETE	/api/roles/:id	                                             Rol Silme
+
 Not: Tüm endpoint’ler ilgili controllers/ ve routes/ klasörlerinde detaylandırılmıştır.
 
 📈 Fonksiyonel Özellikler
@@ -69,16 +85,16 @@ Not: Tüm endpoint’ler ilgili controllers/ ve routes/ klasörlerinde detayland
 
 📑 Sipariş takibi ve detaylı raporlama
 
-🔄 Gerçek zamanlı veri güncellemeleri (PubNub entegrasyonu)
+📊 CSV/Excel dışa aktarım özelliği
+
+👥 Kullanıcı yönetimi ve rol bazlı yetkilendirme
 
 ⏱️ Hızlı veri erişimi ve minimum hata
 
 📌 Gelecekteki Geliştirmeler
-📊 CSV/Excel dışa aktarım özelliği
+
 
 📺 Realtime dashboard (grafikler)
-
-👥 Kullanıcı yönetimi ve rol bazlı yetkilendirme
 
 ⚙️ IoT tartı cihazları ile otomatik veri girişi
 
@@ -100,14 +116,9 @@ git push origin feature/yeni-ozellik
 
 Pull request gönderin.
 
-📝 Lisans
-Bu proje MIT Lisansı ile lisanslanmıştır. Detaylar için LICENSE dosyasını inceleyebilirsiniz.
 
 📫 İletişim
 Her türlü görüş, öneri veya işbirliği için:
 
 GitHub: altnskmuhammed
-📫 İletişim
-Her türlü görüş, öneri veya işbirliği için:
 
-GitHub: altnskmuhammed
