@@ -8,7 +8,7 @@ Bu proje, balık işleme tesislerinde strafor kutulara yapıştırılan barkodlu
 
 - Her strafor kutusu mobil uygulama aracılığıyla barkodla tanımlanır.
 - Barkodu okunan straforlar ilgili kalibre ve palet içerisine otomatik olarak atanır.
-- Paletler sistemde birer siparişi temsil eder.
+- Paletler sistemde bir siparişin parçalarını temsil eder.
 - Paletlerin toplam kilosu, içindeki strafor sayısı, toplam palet adedi ve genel tonaj gibi veriler hızlı ve güvenilir bir şekilde sistem tarafından hesaplanır.
 - İnsan hatası minimuma indirilir, zaman tasarrufu ve veri doğruluğu sağlanır.
 
@@ -16,14 +16,13 @@ Bu proje, balık işleme tesislerinde strafor kutulara yapıştırılan barkodlu
 
 - **Node.js & Express.js** – Sunucu tarafı uygulama geliştirme
 - **MongoDB & Mongoose** – Veritabanı yönetimi
-- **PubNub** – Gerçek zamanlı veri iletimi
 - **dotenv** – Ortam değişkenleri yönetimi
 - **uuid** – Benzersiz ID oluşturma
 - **nodemon** – Geliştirme sürecinde otomatik sunucu yeniden başlatma
 
 ## 📁 Proje Yapısı
 
-gmsDgApp/ ├── controllers/ # API mantıksal kontrolcüleri ├── env/ # Ortam değişkenleri ├── middleware/ # Özel middleware fonksiyonları ├── models/ # Mongoose şema tanımları ├── routes/ # Express router dosyaları ├── pubnubConfig.js # PubNub yapılandırması ├── server.js # Uygulamanın başlangıç noktası ├── package.json # Proje bağımlılıkları ve scriptler
+gmsDgApp/ ├── controllers/ # API mantıksal kontrolcüleri ├── env/ # Ortam değişkenleri ├── middleware/ # Özel middleware fonksiyonları ├── models/ # Mongoose şema tanımları ├── routes/ # Express router dosyaları  ├── server.js # Uygulamanın başlangıç noktası ├── package.json # Proje bağımlılıkları ve scriptler
 
 
 ## ⚙️ Kurulum Talimatları
