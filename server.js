@@ -72,7 +72,7 @@ app.use("/api/raw-save", rawSaveRoutes);
 app.use("/api/process1", process1Routes); 
 
 app.use('/api', reportRoutes);
-// app.js veya sunucu dosyanızda
+
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
